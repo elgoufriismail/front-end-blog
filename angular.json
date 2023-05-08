@@ -16,18 +16,21 @@
             "outputPath": "dist/front-end-blog",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/plugins/bootstrap/bootstrap.min.css",
+              "src/assets/css/style.css",
+              "src/plugins/tabler-icons/tabler-icons.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/script.js",
+              "src/plugins/lightense/lightense.min.js",
+              "src/plugins/jquery/jquery.min.js",
+              "src/plugins/bootstrap/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -77,18 +80,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         }
