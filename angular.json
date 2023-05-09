@@ -19,18 +19,8 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "src/styles.css",
-              "src/plugins/bootstrap/bootstrap.min.css",
-              "src/assets/css/style.css",
-              "src/plugins/tabler-icons/tabler-icons.min.css"
-            ],
-            "scripts": [
-              "src/assets/js/script.js",
-              "src/plugins/lightense/lightense.min.js",
-              "src/plugins/jquery/jquery.min.js",
-              "src/plugins/bootstrap/bootstrap.min.js"
-            ]
+            "styles": ["src/styles.css"],
+            "scripts": []
           },
           "configurations": {
             "production": {
